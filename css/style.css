@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+form{
+    margin-left: 10ems
+}
+
+
+input[type=submit]{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+   
+
+ 
+ 
+}
+input[type=text]{
+
+    border-radius: 30px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+   ;
+
+ 
+ 
+}
+
+body{
+    background-color: silver;
+}
+main{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20em;
+}
+/* p{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+
+  #weatherfor{
+      position: relative;
+    left: 220px;
+    bottom: 70px;
+}
+#temperature{
+    position: relative;
+  left: 220px;
+  bottom: 70px;
+}
+#feelslike{
+    position: relative;
+  left: 220px;
+  bottom: 70px;
+}
+#weather{
+    position: relative;
+  left: 220px;
+  bottom: 70px;
+}
+
+
+header{
+
+    margin-top: 5px;
+margin-left: 50em;
+}
+
+header{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}

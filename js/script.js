@@ -3,15 +3,15 @@ $.ajax({
 }).then(
     function(data){
         // console.log(data)
-        
+
+
     },
     function(error){
         console.log('make sure you typed in a real city', error);
     }
 );
 
-let iconurl = "http://openweathermap.org/img/wn/10d@2x.png";
-$('#weathericon').attr('src', iconurl);
+
 
 let weatherData;
 
@@ -21,8 +21,12 @@ const $weatherfor = $('#weatherfor');
 const $temperature = $('#temperature');
 const $feelslike = $('#feelslike');
 const $weather = $('#weather');
-const $icon = $('#icon')
+
 const $input = $('input[type="text"]');
+
+
+
+
 
 
 function handleGetData
@@ -34,12 +38,13 @@ $.ajax({
 function(data) {
         console.log(data);
         weatherData = data;
+        successmessage = 'Data was succesfully captured';
         render($input.val(""));
             $weatherfor.text(data.name);
             $temperature.text(data.main.temp);
             $feelslike.text(data.main.feels_like);
             $weather.text(data.weather[0].description);
-             $icon.attr('src', data.weather[0].icon);
+
 
     },
 function(error) {
@@ -49,11 +54,11 @@ function(error) {
 
 
 function render() {
-    $weatherfor.text(weatherData.name)
+    $weatherfor.text(weatherData.name)    
     $temperature.text(weatherData.main.temp)
     $feelslike.text(weatherData.main.feels_like)
     $weather.text(weatherData.weather[0].description)
-     $icon.attr('src', weatherData.weather[0].icon)
+
 }
 
 $('form').on('submit', handleGetData)
